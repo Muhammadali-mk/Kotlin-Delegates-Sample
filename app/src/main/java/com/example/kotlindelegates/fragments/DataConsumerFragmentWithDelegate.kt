@@ -1,6 +1,7 @@
 package com.example.kotlindelegates.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +18,7 @@ class DataConsumerFragmentWithDelegate : Fragment(R.layout.fragment_data_consume
 
     private val randomStudent by RandomStudentDelegate()
     private var age by argumentDelegate<Int>()
+    private var id by argumentDelegate<Int>()
     private var name by argumentDelegate<String>()
 
     override fun onCreateView(
@@ -30,6 +32,7 @@ class DataConsumerFragmentWithDelegate : Fragment(R.layout.fragment_data_consume
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        Log.i("DataConsumerFragmentWithDelegate ","id taken $id")
         renderDetails(age, name)
         binding.randomBtn.setOnClickListener {
             renderDetails(randomStudent.age, randomStudent.name)
@@ -42,9 +45,10 @@ class DataConsumerFragmentWithDelegate : Fragment(R.layout.fragment_data_consume
     }
 
     companion object {
-        fun newInstance(age: Int, name: String): DataConsumerFragmentWithDelegate {
+        fun newInstance(id: Int, age: Int, name: String): DataConsumerFragmentWithDelegate {
             return DataConsumerFragmentWithDelegate()
                 .apply {
+                    this.id = id
                     this.age = age
                     this.name = name
                 }
