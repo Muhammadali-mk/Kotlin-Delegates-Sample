@@ -118,8 +118,7 @@ fun test() {
     student.address = "New York"
     student.address = "New"
     println(student.address)//New York
-}
-*/
+}*/
 
 data class Student(val age: Int, val name: String)
 
