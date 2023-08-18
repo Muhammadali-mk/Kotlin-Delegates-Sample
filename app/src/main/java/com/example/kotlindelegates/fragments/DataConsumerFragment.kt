@@ -15,7 +15,6 @@ class DataConsumerFragment : Fragment(R.layout.fragment_data_consumer) {
 
     private var _binding: FragmentDataConsumerBinding? = null
     private val binding get() = _binding!!
-
     private var age: Int? = null
     private var name: String? = null
 
