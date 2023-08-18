@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EnrollmentEditText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorHint">@color/enrollment_title_gray</item>
+        <item name="android:textColor">@color/enrollment_title_gray</item>
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="android:background">@drawable/bg_custom_edit_text</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:layout_height">45dp</item>
+
+    </style>
+
+    <style name="EnrollmentPlainGrayText">
+        <item name="android:textColor">@color/enrollment_light_gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/sf_compact_display_regular</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+</resources>

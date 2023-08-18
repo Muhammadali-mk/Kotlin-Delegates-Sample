@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="enrollment_card_background">#f7f9fa</color>
+    <color name="enrollment_title_gray">#424e57</color>
+    <color name="enrollment_title_gray_opacity_30">#4d424e57</color>
+    <color name="enrollment_title_step">#b4b4b4</color>
+    <color name="enrollment_gray">#8C424e57</color>
+    <color name="green_btn_opacity_10">#1A56b387</color>
+    <color name="enrollment_light_gray">#9f9f9f</color>
+    <color name="lightGrayBackground">#e4e9ed</color>
 </resources>

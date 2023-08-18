@@ -67,4 +67,5 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     // Kotlin
     implementation("androidx.fragment:fragment-ktx:1.6.1")
+    implementation ("androidx.recyclerview:recyclerview-selection:1.1.0")
 }

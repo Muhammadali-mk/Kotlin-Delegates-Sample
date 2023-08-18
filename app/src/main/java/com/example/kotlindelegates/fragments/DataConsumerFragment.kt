@@ -10,6 +10,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import com.example.kotlindelegates.R
 import com.example.kotlindelegates.databinding.FragmentDataConsumerBinding
+import ru.surfstudio.android.easyadapter.ItemList
 
 class DataConsumerFragment : Fragment(R.layout.fragment_data_consumer) {
 

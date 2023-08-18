@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">KotlinDelegates</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="mailing_address_line_1_hint">Mailing Address Line 1</string>
+    <string name="mailing_address_line_2_hint">Mailing Address Line 2</string>
+    <string name="city">City</string>
+    <string name="state_hint">State</string>
+    <string name="zip_code">ZIP Code</string>
 </resources>

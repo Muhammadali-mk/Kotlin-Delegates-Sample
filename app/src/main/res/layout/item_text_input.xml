@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <TextView
+        android:id="@+id/label_tv"
+        style="@style/EnrollmentPlainGrayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name_hint" />
+
+    <EditText
+        android:id="@+id/input_et"
+        style="@style/EnrollmentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginTop="@dimen/margin_enrollment_xs"
+        android:inputType="textPersonName|textCapWords" />
+
+    <TextView
+        android:id="@+id/input_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_custom_edit_text"
+        android:fontFamily="@font/sf_compact_display_regular"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/enrollment_title_gray"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:visibility="gone"
+        tools:text="sample mane" />
+
+    <TextView
+        android:id="@+id/error_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_enrollment_xs"
+        android:textColor="?colorError"
+        android:textSize="14sp"
+        android:visibility="gone"
+        tools:text="error"
+        tools:visibility="visible" />
+</merge>
