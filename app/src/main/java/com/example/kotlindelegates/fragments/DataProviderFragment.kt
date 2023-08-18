@@ -30,6 +30,7 @@ class DataProviderFragment : Fragment(R.layout.fragment_data_provider) {
                 replace(
                     R.id.fragment_container_view,
                     DataConsumerFragmentWithDelegate.newInstance(
+                        id=12345,
                         age = binding.ageEt.text.toString().toInt(),
                         name = binding.nameEt.text.toString()
                     )

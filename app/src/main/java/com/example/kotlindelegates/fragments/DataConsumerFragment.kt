@@ -15,7 +15,6 @@ class DataConsumerFragment : Fragment(R.layout.fragment_data_consumer) {
 
     private var _binding: FragmentDataConsumerBinding? = null
     private val binding get() = _binding!!
-
     private var age: Int? = null
     private var name: String? = null
 
@@ -42,10 +41,10 @@ class DataConsumerFragment : Fragment(R.layout.fragment_data_consumer) {
         private const val EXTRA_AGE = "age"
         private const val EXTRA_NAME = "name"
 
-        fun newInstance(id: Int, name: String): DataConsumerFragment {
+        fun newInstance(age: Int, name: String): DataConsumerFragment {
             return DataConsumerFragment()
                 .apply {
-                    arguments = bundleOf(EXTRA_AGE to id, EXTRA_NAME to name)
+                    arguments = bundleOf(EXTRA_AGE to age, EXTRA_NAME to name)
                 }
         }
     }

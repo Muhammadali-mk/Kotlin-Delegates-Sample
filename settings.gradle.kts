@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "KotlinDelegates"
 include(":app")
- 
+include(":lib-easyadapter")
